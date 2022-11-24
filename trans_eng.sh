@@ -1,4 +1,4 @@
-GAS_URL=`cat settings.json | jq '.gas_url'`
+GAS_URL=`cat $HOME/.gas_google_trans_shell_script/settings.json | jq '.gas_url'`
 GAS_URL=`echo ${GAS_URL} | sed -e 's/\"//g'`
 
 EG_TXT=$1
